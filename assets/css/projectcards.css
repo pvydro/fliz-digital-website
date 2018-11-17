@@ -1,0 +1,84 @@
+/* Projects */
+.project-container {
+  position: relative;
+  width: 98%;
+  height: 40vw;
+  left: 50%;
+  right: 50%;
+  padding: 2vw;
+  border-radius: 7px;
+  transition: 0.2s;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  border: 0;
+  box-shadow: 15px 15px 0px black
+}
+.project-container h1 {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 5vw;
+  bottom: 2.5vw;
+  color: indianred;
+  text-shadow: 4px -3px white, 0px 0px 30px black;
+}
+.project-container h5 {
+  text-align: right;
+  font-size: 2vw;
+  text-shadow: 0px 0px 30px black;
+}
+.project-container h3 {
+  position: absolute;
+  bottom: 8vw;
+  font-size: 2.5vw;
+  color: lightgray;
+  text-shadow: 0px 0px 20px black;
+}
+.project-container h4 {
+  position: absolute;
+  bottom: 1.3vw;
+  font-size: 1.2vw;
+  color: lightgray;
+  text-shadow: 0px 0px 20px black;
+}
+.project-container:hover {
+  filter: brightness(0.9);
+  border: 5px solid white;
+  cursor: pointer;
+  /* box-shadow: 15px 15px 0px black, 0px 0px 100px rgba(255, 255, 255, 0.3); */
+}
+.project-button {
+  width: 100%;
+  text-align: center;
+}
+
+#aah-pa .project-container {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(255, 150, 150, 0.5)), url('../imgs/projects/aahpa/aahpabanner.png');
+}
+#ammo-inferno .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(255, 150, 150, 0.5)), url('../imgs/projects/ammoinferno/ammoinfernobanner.png');
+}
+#sg-pa .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(255, 150, 150, 0.5)), url('../imgs/projects/sgpa/sgpabanner.png');
+}
+#pixel-pete .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(255, 150, 150, 0.5)), url('../imgs/projects/pixelpete/pixelpetebanner.png');
+}
+#ft-pa .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(255, 150, 150, 0.5)), url('../imgs/projects/ftpa/ftpabanner.png');
+}
+#wobblyfly .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(255, 150, 150, 0.5)), url('../imgs/projects/wobblyfly/wobblyflybanner.png');
+}
+#jetpackboy .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(255, 150, 150, 0.5)), url('../imgs/projects/jetpackboy/jetpackboybanner.png');
+}
+#melon-catch .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(255, 150, 150, 0.5)), url('../imgs/projects/meloncatch/meloncatchbanner.png');
+}
+#languinis .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(255, 150, 150, 0.5)), url('../imgs/projects/languinis/languinisbanner.png');
+}
+#terragenesis .project-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(255, 150, 150, 0.5)), url('../imgs/projects/terragenesis/terragenesisbanner.png');
+}

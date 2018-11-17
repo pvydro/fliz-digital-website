@@ -1,0 +1,51 @@
+body {
+  overflow: hidden;
+}
+
+#landing-page .letter {
+	font-family: 'Roboto';
+	width: 48px;
+	font-size: 28px;
+	/* Glitch effect */
+	-moz-transform: skewX(0deg);
+	-ms-transform: skewX(0deg);
+	-webkit-transform: skewX(0deg);
+	transform: skewX(0deg);
+	-moz-animation: shift 4s ease-in-out infinite alternate;
+	-webkit-animation: shift 4s ease-in-out infinite alternate;
+	animation: shift 4s ease-in-out infinite alternate;
+}
+#landing-page #letters {
+  animation: fade-in 1.0s ease-in;
+}
+#landing-page .center-wrapper p {
+	opacity: 0;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 14px;
+  /* font-weight: 500; */
+  color: #eee;
+	margin-top: 20px;
+	letter-spacing: 2px;
+	animation: fade-in 1.0s forwards;
+}
+#landing-page .center-wrapper .sub-1 {
+	animation-delay: 1.0s;
+}
+#landing-page .center-wrapper .sub-2 {
+	animation-delay: 1.5s;
+}
+#landing-page .button-section a {
+	position: relative;
+	top: 40px;
+}
+.goto-button {
+  opacity: 0;
+  text-align: center;
+  animation: fade-in 0.5s ease-in forwards;
+  animation-delay: 0.5s;
+}
+@media (max-width: 768px) {
+  .hollow-button {
+    width: 60vw;
+  }
+}

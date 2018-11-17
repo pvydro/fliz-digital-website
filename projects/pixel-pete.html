@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flizzet.pixel-pete</title>
+
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Lobster|Roboto|Abril+Fatface|Kreon" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/spinloader.css">
+  <link rel="stylesheet" href="../assets/css/hover-min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/hamburgers.min.css">
+  <link rel="stylesheet" href="../assets/css/fliz-carousel.css">
+  <link rel="stylesheet" href="../assets/css/projectcards.css">
+  <link rel="stylesheet" href="../assets/css/animatedletterfill.css">
+  <link rel="stylesheet" href="../assets/css/coolbuttons.css">
+  <link rel="stylesheet" href="../assets/css/project-page.css">
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../assets/js/jquery.scrollTo.min.js"></script>
+  <script src="../assets/js/jquery.localScroll.min.js"></script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/pagetransition.js"></script>
+  <script src="../assets/js/background.js"></script>
+  <script src="../assets/js/fliz-carousel.js"></script>
+  <script src="../assets/js/projectthumbs.js"></script>
+  <script src="../assets/js/project-page.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body onunload="hideOverlay();">
+
+  <span class="overlay">
+    <div id="loader">
+      <div class="cssload-loader-container">
+        <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+      </div>
+    </div>
+  </span>
+
+  <canvas id="background-canvas"></canvas>
+
+  <div id="main">
+
+
+
+    <div id="jumbotron"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../assets/imgs/projects/pixelpete/pixelpetebanner.png')">
+    <div id="header">
+      <h1>Pixel Pete</h1>
+      <h3>An Android game with pixel graphics</h3>
+      <a onclick="closePage('../projects.html');" class="back-button hvr-backward">
+        <span class="fa fa-angle-left"><p>back to projects</p></span>
+      </a>
+    </div>
+      <a href="#about" class="hvr-sink">
+        <span class="fa fa-angle-double-down down-btn"></span>
+      </a>
+    </div>
+
+    <a name="about"></a>
+    <div class="container-fluid" id="about-fluid">
+      <div class="container">
+        <div id="about" class="about-full">
+          <br>
+          <h1>About</h1>
+          <p data-aos="fade-right">
+            Pixel Pete is a 2D pixel art vertical casual game designed for Android
+            and iOS. Built with Flash and ActionScript 3.0 using the Adobe AIR
+            framework. Contains attractive pixel art graphics, and took approximately
+            4 weeks.
+            <br><br>
+            This was the second game built by the studio, and boasts beautiful graphics,
+            a innovative weapon customization system led by a gyroscope-based rotating
+            and interactive weapon. The game is an infinite runner at the core,
+            with an array of unique, fun enemies to fight through.
+          </p>
+          <img data-tilt data-tilt-perspective="2000" style="margin-top: 4%"
+          src="../assets/imgs/projects/pixelpete/mockup.png" class="mockup">
+        </div>
+      </div>
+    </div>
+    <div id="project-methods">
+
+      <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+          <li role="presentation" class="active"><a data-target="#design" aria-controls="design" role="tab" data-toggle="tab">Design</a></li>
+          <li role="presentation"><a data-target="#development" aria-controls="development" role="tab" data-toggle="tab">Development</a></li>
+          <li role="presentation"><a data-target="#platforms" aria-controls="platforms" role="tab" data-toggle="tab">Platforms</a></li>
+          <li role="presentation"><a data-target="#distribution" aria-controls="distribution" role="tab" data-toggle="tab">Distribution</a></li>
+          <li role="presentation"><a data-target="#monetization" aria-controls="monetization" role="tab" data-toggle="tab">Monetization</a></li>
+        </ul>
+      </div>
+
+      <!-- Tab panes -->
+      <div class="tab-content container">
+        <div role="tabpanel" class="tab-pane active" id="design">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/skill-icons/gimp.png" class="skill-img">
+              <img src="../assets/imgs/skill-icons/photoshop.png" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Design</h1>
+              <p>Design was done with Gimp and Photoshop. Animations were created using
+              Gimp for hand-drawn spritesheets. Gimp & Photoshop are our go-to options
+              for pixel art designs.</p>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="development">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/skill-icons/libgdx.png" class="skill-img">
+              <img src="../assets/imgs/skill-icons/java.png" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Development</h1>
+              <p>Development was done with Flash, coded in ActionScript 3.0, and
+              built for Android & iOS using Adobe Air. Adobe Flash has since become
+              essentially obselete, but was one of the most popular out there.
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="platforms">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/skill-icons/ios.png" class="skill-img">
+              <img src="../assets/imgs/skill-icons/android.png" class="skill-img">
+              <img src="../assets/imgs/skill-icons/windows.png" alt="" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Platforms</h1>
+              <p>The game was developed with mobile (iOS & Android) in mind. It
+              also runs on PC, Mac & Linux, using Flash's cross-platform capabilities
+              and Adobe Air.</p>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="distribution">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/skill-icons/play.png" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Distribution</h1>
+              <p>Distributed on the Google Play Store. For distribution, we used
+                ASO techniques, just to showcase our marketting skills. We provide
+                ASO for all our projects, if it applies.</p>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="monetization">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/skill-icons/admob.png" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Monetization</h1>
+              <p>We put together interstitial ads, video ads, and banner ads using
+                Google AdMob.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container"><hr></div>
+
+    </div>
+
+    <div id="screenshots" class="full-page">
+      <h1>Screenshots</h1>
+      <div class="fliz-carousel">
+        <!-- <div class="fliz-carousel-item" style="background"></div> -->
+        <img src="../assets/imgs/projects/pixelpete/screenshots/1.png" class="fliz-carousel-item">
+        <img src="../assets/imgs/projects/pixelpete/screenshots/2.png" class="fliz-carousel-item">
+        <img src="../assets/imgs/projects/pixelpete/screenshots/3.png" class="fliz-carousel-item">
+        <img src="../assets/imgs/projects/pixelpete/screenshots/4.png" class="fliz-carousel-item">
+        <img src="../assets/imgs/projects/pixelpete/screenshots/5.png" class="fliz-carousel-item">
+        <span class="fliz-carousel-next-button fa fa-angle-right" onclick="cycleNextItem();"></span>
+        <span class="fliz-carousel-prev-button fa fa-angle-left" onclick="cyclePreviousItem();"></span>
+      </div>
+    </div>
+
+    <div id="cross-platform-page" class="full-page">
+      <div class="container">
+        <hr>
+        <div class="half-container">
+          <h1>Cross Platform Development</h1>
+          <p>A lot of projects require cross platform development. Whether it needs
+          to be played on iOS, Android, Mac OSX, Windows, Xbox, or simply the web browser,
+          we make it work. Pixel Pete was built cross-platform for iOS, Android,
+          Mac OSX, and Windows all with a single codebase. This was done using Adobe
+          Flash with Adobe Air.
+          </p>
+        </div>
+        <div class="half-container">
+          <img src="../assets/imgs/projects/cross-platform.png">
+        </div>
+      </div>
+    </div>
+
+    <div id="design-page">
+      <div class="container">
+        <div class="half-container">
+          <img src="../assets/imgs/projects/pixelpete/design-showcase.png" alt="">
+        </div>
+        <div class="half-container">
+          <h1>Design</h1>
+          <p>For design we took advantage of our beautiful pixel art abilities. Using
+          Gimp and Photoshop, we were able to create gorgeous graphics and effects
+          with our heavily practiced skills and artistic eyes. For this game, we felt
+          the pixel art style worked perfectly for our target audience. We also just
+          love making it.
+          </p>
+        </div>
+        <br>
+        <hr>
+        <br>
+      </div>
+    </div>
+
+    <div id="more-projects">
+      <div class="container">
+        <h1>Similar projects</h1>
+        <div id="jetpackboy" data-aos="fade-left">
+          <div data-tilt data-tilt-perspective="2000" class="container">
+            <a onclick="closePage('jetpackboy.html');" class="project-button">
+              <div class="project-container">
+                <h5>2014</h5>
+                <h3>Self-Published</h3>
+                <h1 class="animated-text-fill">Jetpack Boy</h1>
+                <h4>A mobile game with pixel art graphics</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <br>
+        <div id="ammo-inferno" data-aos="fade-right">
+          <div data-tilt data-tilt-perspective="2000" class="container">
+            <a onclick="closePage('projects/ammo-inferno.html')" class="project-button">
+              <div class="project-container">
+                <h5>2017</h5>
+                <h3>Self-Published</h3>
+                <h1 class="animated-text-fill">Ammo Inferno</h1>
+                <h4>An Android game for the retro shooter lovers</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="contact-button">
+      <div class="button" onclick="closePage('contact.html')">
+        <span class="button__mask"></span>
+        <span class="button__text">Contact</span>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Vertical text piece -->
+    <div class="vertical-side-text">&copy;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script> - FLIZZET DIGITAL
+    </div>
+
+  </div>
+
+  <!-- Nav -->
+  <button class="nav-button hamburger hamburger--3dxy" type="button" onclick="openNav();">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <!-- Navbar -->
+  <div id="navbar">
+    <div class="navbar-content">
+      <ul>
+        <li><a onclick="closePage('../index.html')" class="nav-link">
+          <span class="left-selector">[</span>Home<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('../about.html')" class="nav-link">
+          <span class="left-selector">[</span>About<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('../projects.html')" class="nav-link">
+          <span class="left-selector">[</span>Projects<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('../careers.html');" class="nav-link">
+          <span class="left-selector">[</span>Careers<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('../contact.html')" class="nav-link">
+          <span class="left-selector">[</span>Contact<span class="right-selector">]</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../assets/js/tilt.jquery.min.js"></script>
+  <script>
+    // Enable smooth scroll with click-to-navigate
+    $.localScroll({duration:500});
+    AOS.init({
+      offset: 200,
+      easing: 'ease-out-quart'
+    });
+  </script>
+
+</body>
+</html>

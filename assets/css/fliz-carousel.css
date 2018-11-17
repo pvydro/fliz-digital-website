@@ -1,0 +1,93 @@
+.fliz-carousel {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.fliz-carousel-item {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0;
+
+  transition: 0.2s;
+  visibility: hidden;
+  border: none;
+  /* transition-timing-function: cubic-bezier(.1, .7, 0.3, 1.5); */
+}
+.fliz-next-carousel-item {
+  visibility: visible;
+  position: absolute;
+  height: 65vh;
+  left: auto;
+  right: 40vw;
+  transform: translateX(50%);
+  filter: brightness(0.5);
+  border: none;
+}
+.fliz-previous-carousel-item {
+  visibility: visible;
+  position: absolute;
+  height: 65vh;
+  right: auto;
+  left: 40vw;
+  transform: translateX(-50%);
+  filter: brightness(0.5);
+  border: none;
+}
+.fliz-current-carousel-item {
+  visibility: visible;
+  position: absolute;
+  height: 80vh;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -5%);
+  z-index: 999;
+  filter: none;
+  border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px black, 0px 0px 20px black;
+}
+.fliz-next-carousel-item:hover {
+  right: 39vw;
+}
+.fliz-previous-carousel-item:hover {
+  left: 39vw;
+}
+.fliz-next-carousel-item:hover, .fliz-previous-carousel-item:hover {
+  filter: brightness(0.4);
+  cursor: pointer;
+  transition-timing-function: cubic-bezier(.1, .7, 0.3, 2.0);
+}
+
+.fliz-carousel .fliz-carousel-next-button {
+  position: absolute;
+  right: 2vw;
+  color: white;
+  font-size: 5vw;
+  z-index: 999;
+  transition: .2s;
+}
+.fliz-carousel .fliz-carousel-prev-button {
+  position: absolute;
+  left: 2vw;
+  color: white-space;
+  font-size: 5vw;
+  z-index: 999;
+  transition: .2s;
+}
+.fliz-carousel .fliz-carousel-prev-button:hover, .fliz-carousel .fliz-carousel-next-button:hover {
+  filter: brightness(0.75);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .fliz-carousel .fliz-carousel-next-button, .fliz-carousel .fliz-carousel-prev-button {
+    font-size: 20vw;
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+  }
+}

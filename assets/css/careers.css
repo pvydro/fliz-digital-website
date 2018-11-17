@@ -1,0 +1,40 @@
+#header {
+  text-align: center;
+  margin-top: 5rem;
+  border-bottom: 1px solid white;
+  /* width: 60%; */
+  width: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 20px 15px -15px black;
+}
+
+#header h1 {
+  text-transform: uppercase;
+  font-size: 10vw;
+  background-color: #001A23;
+  color: white;
+  text-shadow: -4px 3px 0 #001A23, -8px 7px 0 indianred;
+}
+
+#header .top-header {
+  text-transform: uppercase;
+  font-size: 2vw;
+}
+
+.apply-button {
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #header .top-header {
+    font-size: 4vw;
+  }
+  #header h1 {
+    font-size: 15vw;
+  }
+  #header {
+    width: 80%;
+  }
+}

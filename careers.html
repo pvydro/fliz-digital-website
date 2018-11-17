@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flizzet.careers</title>
+
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Lobster|Roboto|Abril+Fatface|Kreon" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+  <link rel="stylesheet" href="assets/css/spinloader.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/cooltable.css">
+  <link rel="stylesheet" href="assets/css/coolbuttons.css">
+  <link rel="stylesheet" href="assets/css/careers.css">
+  <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/background.js"></script>
+
+  <script src="assets/js/pagetransition.js"></script>
+
+</head>
+<body onunload="hideOverlay();">
+
+  <canvas id="background-canvas"></canvas>
+
+  <span class="overlay">
+    <div id="loader">
+      <div class="cssload-loader-container">
+        <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+      </div>
+    </div>
+  </span>
+
+
+  <div id="main">
+    <div id="header">
+      <h4 class="top-header">Flizzet</h4>
+      <h1>Careers</h1>
+
+      <div class="sign-open">
+        HIRING
+      </div>
+
+      <p>We're looking for talented, hard working individuals to join the team.
+      If you feel you qualify to fill one of these open spots, send an email to
+      <a href="mailto:careers@flizzet.com" style="text-decoration: underline;">careers@flizzet.com</a>
+      including the following: Resume/Portfolio, Cover Letter, and any other
+      information that you feel represents your ability.</p>
+    </div>
+
+    <br>
+
+    <div class="container">
+      <table class="cooltable">
+      	<thead>
+      		<tr>
+      			<th><h1>Position Title</h1></th>
+      			<th><h1>Required Skillset</h1></th>
+      			<th><h1>Location</h1></th>
+      		</tr>
+      	</thead>
+      	<tbody>
+      		<tr>
+      			<td>Medium Game Developer</td>
+      			<td>Unity</td>
+      			<td>Seattle, Washington</td>
+      		</tr>
+      		<tr>
+      			<td>Game Designer</td>
+      			<td>Adobe Illustrator, Adobe Photoshop, GIMP, Inkscape</td>
+      			<td>Seattle, Washington</td>
+      		</tr>
+          <tr>
+            <td>Contract Game Tester</td>
+            <td>Game Quality Assurance</td>
+            <td>Any US Location</td>
+          </tr>
+      	</tbody>
+      </table>
+    </div>
+
+    <br>
+
+    <div class="apply-button">
+      <a href="mailto:careers@flizzet.com">
+        <div class="button" >
+          <span class="button__mask"></span>
+          <span class="button__text">Apply now</span>
+        </div>
+      </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Vertical text piece -->
+    <div class="vertical-side-text">&copy;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script> - FLIZZET DIGITAL
+    </div>
+
+  </div>
+
+
+
+  <!-- Navbar -->
+  <div id="navbar">
+    <div class="navbar-content">
+      <ul>
+        <li><a onclick="closePage('index.html');" class="nav-link">
+          <span class="left-selector">[</span>Home<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('about.html')" class="nav-link">
+          <span class="left-selector">[</span>About<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('projects.html')" class="nav-link">
+          <span class="left-selector">[</span>Projects<span class="right-selector">]</span>
+        </a></li>
+        <li><a class="nav-link active">
+          <span class="left-selector">[</span>Careers<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('contact.html')" class="nav-link">
+          <span class="left-selector">[</span>Contact<span class="right-selector">]</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <button class="nav-button hamburger hamburger--3dxy" type="button" onclick="openNav();">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+</body>
+</html>

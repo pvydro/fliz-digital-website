@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flizzet.almost-a-hero-pa</title>
+
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Lobster|Roboto|Abril+Fatface|Kreon" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/spinloader.css">
+  <link rel="stylesheet" href="../assets/css/hover-min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/nav.css">
+  <link rel="stylesheet" href="../assets/css/hamburgers.min.css">
+  <link rel="stylesheet" href="../assets/css/fliz-carousel.css">
+  <link rel="stylesheet" href="../assets/css/projectcards.css">
+  <link rel="stylesheet" href="../assets/css/animatedletterfill.css">
+  <link rel="stylesheet" href="../assets/css/coolbuttons.css">
+  <link rel="stylesheet" href="../assets/css/project-page.css">
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="../assets/js/jquery.scrollTo.min.js"></script>
+  <script src="../assets/js/jquery.localScroll.min.js"></script>
+  <script src="../assets/js/nav.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/pagetransition.js"></script>
+  <script src="../assets/js/background.js"></script>
+  <script src="../assets/js/fliz-carousel.js"></script>
+  <script src="../assets/js/projectthumbs.js"></script>
+  <script src="../assets/js/project-page.js"></script>
+	<script src="almost-a-hero-embeddable/pixi.min.js"></script>
+	<script src="almost-a-hero-embeddable/tink.js"></script>
+	<script src="almost-a-hero-embeddable/images.js"></script>
+	<script src="almost-a-hero-embeddable/classes.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body onunload="hideOverlay();">
+
+  <span class="overlay">
+    <div id="loader">
+      <div class="cssload-loader-container">
+        <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+      </div>
+    </div>
+  </span>
+
+  <canvas id="background-canvas"></canvas>
+
+  <div id="main">
+
+
+
+    <div id="jumbotron"
+		style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../assets/imgs/projects/aahpa/aahpabanner.png')">
+			<!-- <video class="video-banner" autoplay muted loop>
+				<source src="../assets/imgs/projects/aahpa/aahpavideobanner.mp4" type="video/mp4">
+			</video> -->
+
+
+			<div id="header">
+			  <h1>Almost A Hero - Playable Ad</h1>
+			  <h3>An interactive advertisement for the millions-installed RPG</h3>
+			  <a onclick="closePage('../projects.html');" class="back-button hvr-backward">
+			    <span class="fa fa-angle-left"><p>back to projects</p></span>
+			  </a>
+			</div>
+	    <a href="#about" class="hvr-sink">
+	      <span class="fa fa-angle-double-down down-btn"></span>
+	    </a>
+    </div>
+
+    <a name="about"></a>
+    <div class="container-fluid" id="about-fluid">
+      <div class="container">
+        <div id="about">
+          <br>
+          <h1>About</h1>
+          <p data-aos="fade-right">
+            The Almost A Hero Playable Ad was an interactive advertisement built for the
+            publisher "Tilting Point." Tilting Point wanted to showcase the key
+						gameplay aspects of Almost A Hero, and provide a direct gameplay-based
+						advertisement to the developers.
+            <br><br>
+            This is only one of the many interactive advertisements we've done with
+            Tilting Point, and has been a hit with publishers & studios alike. The
+            nature of the advertisement brings a new level of engagement for the
+            viewers, and is much more exciting than the boring interstitial.
+            <br><br>
+            We took advantage of our HTML5 skills, and created everything in pure
+            Javascript to ensure compatability with all ad networks. The ad was
+            entirely under 1MB, with no external references. That includes all images
+            and code.
+            <br><br><br>
+            <a href="#full-ad">TRY IT</a><br>
+						<small>(It's on this page!)</small>
+          </p>
+          <img data-tilt data-tilt-perspective="2000"
+          src="../assets/imgs/projects/aahpa/mockup.png" class="mockup">
+
+        </div>
+      </div>
+    </div>
+    <div id="project-methods">
+
+      <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills nav-justified" role="tablist">
+          <li role="presentation" class="active"><a data-target="#design" aria-controls="design" role="tab" data-toggle="tab">Design</a></li>
+          <li role="presentation"><a data-target="#development" aria-controls="development" role="tab" data-toggle="tab">Development</a></li>
+          <li role="presentation"><a data-target="#platforms" aria-controls="platforms" role="tab" data-toggle="tab">Platforms</a></li>
+          <li role="presentation"><a data-target="#distribution" aria-controls="distribution" role="tab" data-toggle="tab">Distribution</a></li>
+        </ul>
+      </div>
+
+      <!-- Tab panes -->
+      <div class="tab-content container">
+        <div role="tabpanel" class="tab-pane active" id="design">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/clients/beesquare.png" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Design</h1>
+              <p>Design was done by the amazing people at Bee Square Games. All graphics,
+              animations, and effects were created by them and we adapted them to
+              fit the environment and size limits.</p>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="development">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/skill-icons/pixi.png" class="skill-img">
+              <img src="../assets/imgs/skill-icons/html5.png" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Development</h1>
+              <p>Development was done with HTML5 and Pixi.JS. The game is built
+							using Pixi.JS's rendering capabilities and is embeddable in any page
+							or webview, as you can see <a href="#full-ad">here</a></p>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="platforms">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/skill-icons/ios.png" class="skill-img">
+              <img src="../assets/imgs/skill-icons/android.png" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Platforms</h1>
+              <p>The game was developed for mobile (iOS & Android). Since it's built
+              in HTML5, it's runnable in any web environment that supports Canvas.
+              The game adapts to all screen sizes.</p>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="distribution">
+          <div class="tab-content">
+            <div class="image-container half-container">
+              <img src="../assets/imgs/skill-icons/applovin.png" class="skill-img">
+              <img src="../assets/imgs/skill-icons/inmobi.png" class="skill-img">
+              <img src="../assets/imgs/skill-icons/adwords.png" class="skill-img">
+            </div>
+            <div class="info-container half-container">
+              <h1>Distribution</h1>
+              <p>This ad was distributed through AppLovin, InMobi, and Google Adwords
+                ad networks. Each network needed its specific implementation, and
+                we took care of that.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container"><hr></div>
+
+    </div>
+
+    <div id="screenshots" class="full-page">
+      <h1>Screenshots</h1>
+      <div class="fliz-carousel">
+        <!-- <div class="fliz-carousel-item" style="background"></div> -->
+        <img src="../assets/imgs/projects/aahpa/screenshots/1.png" class="fliz-carousel-item">
+        <img src="../assets/imgs/projects/aahpa/screenshots/2.png" class="fliz-carousel-item">
+        <img src="../assets/imgs/projects/aahpa/screenshots/3.png" class="fliz-carousel-item">
+        <span class="fliz-carousel-next-button fa fa-angle-right" onclick="cycleNextItem();"></span>
+        <span class="fliz-carousel-prev-button fa fa-angle-left" onclick="cyclePreviousItem();"></span>
+      </div>
+    </div>
+
+    <div id="cross-platform-page" class="full-page">
+      <div class="container">
+        <hr>
+        <div class="half-container" style="position: relative; z-index: 99;">
+          <h1>Cross Platform Mobile Development</h1>
+          <p>A lot of projects require cross platform development. Whether it needs
+          to be played on iOS, Android, Mac OSX, Windows, Xbox, or simply the web browser,
+          we make it work. The Siege Playable Ad was built cross-platform for iOS
+          and Android with a single codebase. This was done using HTML5 for web game
+          development, giving us the ability to easily build for
+          both the platforms we had in mind.
+          </p>
+        </div>
+        <div class="half-container">
+          <img src="../assets/imgs/projects/cross-platform.png">
+        </div>
+      </div>
+    </div>
+
+    <div id="design-page">
+      <div class="container">
+        <div class="half-container">
+          <img src="../assets/imgs/projects/aahpa/design-showcase.png" alt=""
+					style="position: relative; margin-top: -100%; z-index: 0;">
+        </div>
+        <div class="half-container">
+          <h1>Design</h1>
+          <p>While the team at Bee Square Games took on all the graphical work on this
+          project, we still had a very fundamental part in the design. Being able
+          to bring these graphics to their lowest possible size, while maintaining
+          as much beauty as possible, was a task on its own. We also had a bundle
+          of input for the spec and general flow of the entire advertisement.</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+      </div>
+    </div>
+
+    <div id="more-projects">
+      <div class="container">
+        <h1>Similar projects</h1>
+				<div id="sg-pa" data-aos="fade-left">
+          <div data-tilt data-tilt-perspective="2000" class="container">
+            <a onclick="closePage('siege-pa.html')" class="project-button">
+              <div class="project-container">
+                <h5>2018</h5>
+                <h1 class="animated-text-fill">Siege - PA</h1>
+                <h4>An interactive advertisement for the massive 'Siege: Titan Wars', all in under 1MB</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <br>
+        <div id="ft-pa" data-aos="fade-left">
+          <div data-tilt data-tilt-perspective="2000" class="container">
+            <a onclick="closePage('food-truck-pa.html');" class="project-button">
+              <div class="project-container">
+                <h5>2018</h5>
+                <h1 class="animated-text-fill">Food Truck</h1>
+                <h4>An interactive advertisement for the 10,000,000+ installed 'Food Truck Chef', all in under 1MB</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="contact-button">
+      <div class="button" onclick="closePage('contact.html')">
+        <span class="button__mask"></span>
+        <span class="button__text">Contact</span>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+		<a name="full-ad"></a>
+		<div class="container full-game-preview">
+			<h1>Full ad preview</h1>
+			<h4>Check out the full ad below.</h4>
+			<h5>(Remember, all less than 1MB)</h5>
+		</div>
+
+    <!-- Vertical text piece -->
+    <div class="vertical-side-text">&copy;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script> - FLIZZET DIGITAL
+    </div>
+
+  </div>
+
+  <!-- Nav -->
+  <button class="nav-button hamburger hamburger--3dxy" type="button" onclick="openNav();">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <!-- Navbar -->
+  <div id="navbar">
+    <div class="navbar-content">
+      <ul>
+        <li><a onclick="closePage('../index.html')" class="nav-link">
+          <span class="left-selector">[</span>Home<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('../about.html')" class="nav-link">
+          <span class="left-selector">[</span>About<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('../projects.html')" class="nav-link">
+          <span class="left-selector">[</span>Projects<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('../careers.html');" class="nav-link">
+          <span class="left-selector">[</span>Careers<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('../contact.html')" class="nav-link">
+          <span class="left-selector">[</span>Contact<span class="right-selector">]</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../assets/js/tilt.jquery.min.js"></script>
+  <script>
+    // Enable smooth scroll with click-to-navigate
+    $.localScroll({duration:500});
+    AOS.init({
+      offset: 200,
+      easing: 'ease-out-quart'
+    });
+  </script>
+	<!-- Embeddable game -->
+	<script src="almost-a-hero-embeddable/loader.js"></script>
+	<script src="almost-a-hero-embeddable/game.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flizzet.contact</title>
+
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Lobster|Roboto|Abril+Fatface|Kreon" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+  <link rel="stylesheet" href="assets/css/flizanim.css">
+  <link rel="stylesheet" href="assets/css/spinloader.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/coolbuttons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/background.js"></script>
+
+  <script src="assets/js/pagetransition.js"></script>
+  <script src="assets/js/contact.js"></script>
+
+</head>
+<body onunload="hideOverlay();">
+
+  <canvas id="background-canvas"></canvas>
+
+  <span class="overlay">
+    <div id="loader">
+      <div class="cssload-loader-container">
+        <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+      </div>
+    </div>
+  </span>
+
+  <div id="main">
+    <br><br>
+    <div id="header">
+
+      <h4 class="top-header">Flizzet</h4>
+      <h1 data-heading="Contact">Contact</h1>
+      <div class="sign-open">
+        OPEN
+      </div>
+    </div>
+
+    <!-- Rotating words -->
+    <br>
+    <div class="rolling-words">
+      <div class="rolling-word-header">Whether you want to</div>
+      <div id="rollingword-1" class="rolling-word">Inquire</div>
+      <div id="rollingword-6" class="rolling-word">Request</div>
+      <div id="rollingword-3" class="rolling-word">Hire</div>
+      <div id="rollingword-4" class="rolling-word">Question</div>
+      <div id="rollingword-5" class="rolling-word">Pry</div>
+      <div id="rollingword-7" class="rolling-word">Submit</div>
+      <div id="rollingword-8" class="rolling-word">Offer</div>
+      <div id="rollingword-9" class="rolling-word">Seek</div>
+      <div id="rollingword-10" class="rolling-word">Pitch</div>
+      <div id="rollingword-11" class="rolling-word">Probe</div>
+      <div id="rollingword-12" class="rolling-word">Query</div>
+      <div id="rollingword-13" class="rolling-word">Examine</div>
+      <div id="rollingword-14" class="rolling-word">Bid</div>
+      <div id="rollingword-15" class="rolling-word">Draft</div>
+      <div id="rollingword-16" class="rolling-word">Obtain</div>
+      <div id="rollingword-17" class="rolling-word">Promise</div>
+      <div id="rollingword-18" class="rolling-word">Offer</div>
+      <div id="rollingword-19" class="rolling-word">Speak</div>
+      <div id="rollingword-20" class="rolling-word">Negotiate</div>
+      <div class="rolling-word-header">Throw us a message:</div>
+    </div>
+
+    <br>
+
+    <div class="container full-contact-container">
+      <div class="full-contact-container-row">
+        <div class="contact-container">
+          <div class="contact-header">Email -</div>
+        </div>
+        <div class="contact-container">
+          <a href="mailto:hello@flizzet.com"><div class="contact-piece">hello@flizzet.com</div></a>
+        </div>
+      </div>
+      <div class="full-contact-container-row">
+        <div class="contact-container">
+          <div class="contact-header">Phone -</div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-piece">+1 206 883 3226</div>
+        </div>
+      </div>
+      <div class="full-contact-container-row">
+        <div class="contact-container">
+          <div class="contact-header">iMessage -</div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-piece">pedro@flizzet.com</div>
+        </div>
+      </div>
+      <div class="full-contact-container-row">
+        <div class="contact-container">
+          <div class="contact-header">Skype -</div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-piece">flizzetstudios</div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Vertical text piece -->
+    <div class="vertical-side-text">&copy;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script> - FLIZZET DIGITAL
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div id="navbar">
+    <div class="navbar-content">
+      <ul>
+        <li><a onclick="closePage('index.html');" class="nav-link">
+          <span class="left-selector">[</span>Home<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('about.html')" class="nav-link">
+          <span class="left-selector">[</span>About<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('projects.html')" class="nav-link">
+          <span class="left-selector">[</span>Projects<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('careers.html')" class="nav-link">
+          <span class="left-selector">[</span>Careers<span class="right-selector">]</span>
+        </a></li>
+        <li><a class="nav-link active">
+          <span class="left-selector">[</span>Contact<span class="right-selector">]</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <button class="nav-button hamburger hamburger--3dxy" type="button" onclick="openNav();">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+</body>
+</html>

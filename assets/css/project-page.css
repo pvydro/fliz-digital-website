@@ -1,0 +1,230 @@
+h1 {
+  text-transform: uppercase;
+}
+
+hr {
+  width: 100%;
+}
+p {
+  font-size: 1.75vw;
+}
+
+#header {
+  width: 100%;
+  text-align: right;
+  padding: 2vw;
+}
+#header h1 {
+  font-size: 4vw;
+  text-transform: uppercase;
+}
+#header h3 {
+  font-size: 2vw;
+}
+#header .back-button {
+  text-align: left;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 5vw;
+  transition-timing-function: cubic-bezier(.1, .7, 0.3, 2.0);
+}
+#header .back-button span {
+  float: left;
+}
+#header .back-button span p {
+  position: relative;
+  margin-top: 1.5vw;
+  font-size: 2vw;
+  float: right;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+#header .back-button:hover {
+  cursor: pointer;
+}
+
+#jumbotron {
+  position: ;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 50vw;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+#jumbotron .down-btn {
+  position: absolute;
+  height: 100%;
+  font-size: 8vw;
+  top: 25vw;
+  transform: translateX(-50%);
+}
+#jumbotron .down-btn:hover {
+  cursor: pointer;
+}
+.hvr-sink {
+  transition-timing-function: cubic-bezier(.1, .7, 0.3,2.0);
+}
+#jumbotron .video-banner {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -99;
+}
+
+#about-fluid {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  padding: 10vw 0;
+}
+#about {
+  float: left;
+}
+#about p {
+  width: 65%;
+  float: left;
+  font-size: 1.75vw;
+}
+#about .mockup {
+  width: 35%;
+  float: left;
+  padding-left: 2vw;
+}
+#about.about-full p {
+  width: 100%;
+}
+#about.about-full .mockup {
+  width: 100%;
+}
+#about a {
+  text-decoration: underline;
+}
+
+#project-methods {
+  width: 100%;
+  float: left;
+  background-color: transparent;
+}
+.half-container {
+  width: 50%;
+  float: left;
+  padding: 2vw;
+}
+.info-container {
+  font-size: 2vw;
+}
+.image-container {
+  text-align: right;
+}
+.image-container .skill-img {
+  width: 33%;
+  float: right;
+}
+.nav-pills a {
+  text-transform: uppercase;
+}
+.nav-pills li a:hover {
+  cursor: pointer;
+  color: black;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: black;
+  background-color: white;
+  border: 0;
+}
+
+#screenshots h1 {
+  text-align: center;
+  font-size: 5vw;
+}
+#screenshots {
+  float: left;
+}
+
+.half-container img {
+  width: 100%;
+}
+
+#more-projects {
+  text-align: center;
+}
+
+#more-projects .project-container {
+  text-align: center;
+}
+
+.contact-button {
+  text-align: center;
+}
+
+.full-game-preview {
+	text-align: center;
+}
+
+/**/
+
+@media (max-width: 768px) {
+  p {
+    font-size: 5vw;
+  }
+
+  #header {
+    text-align: center;
+  }
+  #header h1 {
+    font-size: 8vw;
+  }
+  #header h3 {
+    font-size: 3vw;
+  }
+
+  #jumbotron .down-btn {
+    display: none;
+  }
+
+  #about p {
+    width: 100%;
+    font-size: 5vw;
+  }
+
+  #about .mockup {
+    display: none;
+  }
+  .image-container .skill-img {
+    width: 50%;
+  }
+  .info-container {
+    font-size: 3vw;
+  }
+  #screenshots h1 {
+    font-size: 10vw;
+  }
+}
+@media (max-width: 480px) {
+  .image-container {
+    display: none;
+  }
+  .half-container {
+    width: 100%;
+    font-size: 5vw;
+  }
+  #about .mockup {
+    display: none;
+  }
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter .5s steps(50) 1 normal both;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flizzet.home</title>
+
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Lobster|Roboto|Abril+Fatface|Kreon|Righteous" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/spinloader.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/hover-min.css">
+  <link rel="stylesheet" href="assets/css/shake.css">
+  <link rel="stylesheet" href="assets/css/coolbuttons.css">
+  <link rel="stylesheet" href="assets/css/flizanim.css">
+  <link rel="stylesheet" href="assets/css/animatedletterfill.css">
+  <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+  <link rel="stylesheet" href="assets/css/hover.min.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/projectcards.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/background.js"></script>
+  <script src="assets/js/pagetransition.js"></script>
+  <script src="assets/js/projectthumbs.js"></script>
+  <script src="assets/js/aos.js"></script>
+
+</head>
+<body onunload="hideOverlay();">
+
+  <canvas id="background-canvas"></canvas>
+
+  <span class="overlay">
+    <div id="loader">
+      <div class="cssload-loader-container">
+        <span class="cssload-loader"><span class="cssload-loader-inner"></span></span>
+      </div>
+    </div>
+  </span>
+
+  <div id="main">
+    <!-- Top header "Flizzet // Pedro Dutra" -->
+    <div id="top-header">
+      <div class="container top-header-container">
+        <div class="top-header-text">
+          // FLIZZET<!-- FLIZZET // PEDRO DUTRA -->
+        </div>
+        <div class="top-header-quicknav">
+          <a href="mailto:pedro@flizzet.com"><span class="fa fa-envelope"></span></a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="full-page">
+      <div id="welcome">
+        <div class="header-background">
+	        <!-- <video autoplay muted loop id="welcome-vid">
+	          <source src="assets/videos/welcome-vid.mp4" type="video/mp4">
+	        </video> -->
+	        <!-- <img src="assets/imgs/header-showcase.png" alt="" class="welcome-image"> -->
+        </div>
+        <div class="container">
+
+          <div class="welcome-header">
+
+            <h1 class="animated-text-fill title">Flizzet Digital</h1>
+            <h4>Gamified Advertisement Agency</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div id="row-1" class="full-page">
+      <div class="container-fluid about-container" data-aos="fade-zoom-in" data-aos-duration="2000">
+        <h1 class="about-header">
+					“The Best in the Game„
+				</h1>
+				<div class="container">
+					<hr>
+					<br><br>
+	        <div class="about-card">
+		        <h1 class="about-card-header" data-aos="fade-up">
+						About -
+						</h1>
+	          <p>
+	          At Flizzet Digital, we specialize in brand growth and advertising using
+	          gamification. With every campaign, we offer a variety
+	          of platforms. From facebook instant games, to full fledged globally published
+	          brand-based games. Our main goal is to bring your idea to life, or plant a seed that
+						will birth a priceless vision. The team is a handful of creative, skilled
+						professionals with open minds and a thriving passion.
+	          </p>
+	          <br>
+	          <h4><a onclick="openLeftSidebar(SideOptions.ABOUT);"class="read-more">Tell Me More</a></h4>
+	        </div>
+					<br><br>
+					<hr>
+				</div>
+				<div id="clients" class="container" data-aos="fade-down">
+	        <br>
+	        <h3>Some of our clients</h3>
+	        <div class="client-bar">
+	          <div class="client-img-container">
+	            <img src="assets/imgs/clients/tiltingpoint.png" alt="" class="client-img">
+	          </div>
+	          <div class="client-img-container">
+	            <img src="assets/imgs/clients/qeexo.png" alt="" class="client-img">
+	          </div>
+	          <div class="client-img-container">
+	            <img src="assets/imgs/clients/appedia.png" alt="" class="client-img">
+	          </div>
+	          <div class="client-img-container">
+	            <img src="assets/imgs/clients/beesquare.png" alt="" class="client-img">
+	          </div>
+	          <div class="client-img-container">
+	            <img src="assets/imgs/clients/simutronics.png" alt="" class="client-img">
+	          </div>
+	          <div class="client-img-container">
+	            <img src="assets/imgs/clients/nukebox.png" alt="" class="client-img">
+	          </div>
+	        </div>
+	      </div>
+      </div>
+      <div id="clear"></div>
+    </div>
+
+		<div id="row-2">
+			<div class="container child-project">
+				<!-- <div class="child-project-img-holder"> -->
+				<!-- </div> -->
+				<hr>
+				<div class="child-project-desc">
+					<img src="assets/imgs/projects/slattclothing/slatt-clothing-logo.png" alt="Slatt Clothing">
+					<div class="child-project-header" data-aos="fade-up">
+						<h1>Our Passion Project</h1>
+						<h3>Slatt Clothing</h3>
+						<span class="header-border"></span>
+					</div>
+					<div class="child-project-summary-holder">
+						<p class="child-project-summary" data-aos="fade-up">As a representation of the effects of our advertising methods on direct
+						business concepts, we decided to create an in-house clothing brand, with
+						an entirely separate audience, and use our advertising methods to increase
+						revenue for this brand.
+						<br><br>
+						Slatt Clothing is a clothing brand focused on the term "Slatt," and
+						the culture surrounding that word, including the influencers who say it. "Slatt"
+						is a term used by many influential hip-hop artists such as NBA Youngboy,
+						Young Thug, Lil Baby, and many more. We created this brand, then
+						used our in-house marketing tactics to increase store visits by 2,193%.
+						Literally.</p>
+					</div>
+
+				</div>
+
+			</div>
+			<br>
+			<div class="container child-project-anchor-container">
+				<a href="projects/slatt-clothing.html" class="hvr-sink">
+					<h3>Read about it here</h3>
+					<br>
+					<hr>
+				</a>
+			</div>
+		</div>
+
+		<br><br>
+
+    <div id="projects" data-aos="fade-up">
+      <div class="container">
+        <h1>We let our work speak for itself.</h1>
+      </div>
+      <br>
+			<div id="aah-pa" data-aos="fade-right">
+        <div data-tilt data-tilt-perspective="2000" class="container">
+          <a onclick="closePage('projects/almost-a-hero-pa.html')" class="project-button">
+            <div class="project-container">
+              <h5>2018</h5>
+              <h3>Bee Square & Tilting Point</h3>
+              <h1 class="animated-text-fill">Almost A Hero - PA</h1>
+              <h4>An interactive advertisement for the millions-installed RPG</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+			<br><br>
+      <div id="sg-pa" data-aos="fade-right">
+        <div data-tilt data-tilt-perspective="2000" class="container">
+          <a onclick="closePage('projects/siege-pa.html');" class="project-button">
+            <div class="project-container">
+              <h5>2018</h5>
+              <h3>Simutronics & Tilting Point</h3>
+              <h1 class="animated-text-fill">SIEGE - PLAYABLE AD</h1>
+              <h4>An interactive advertisement for the massive 'Siege: Titan Wars', all in under 1MB</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br><br>
+      <div id="ammo-inferno" data-aos="fade-right">
+        <div data-tilt data-tilt-perspective="2000" class="container">
+          <a onclick="closePage('projects/ammo-inferno.html');" class="project-button">
+            <div class="project-container">
+              <h5>2017</h5>
+              <h3>Self-Published</h3>
+              <h1 class="animated-text-fill">AMMO INFERNO</h1>
+              <h4>An Android game for the retro shooter lovers</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br><br>
+      <div id="pixel-pete" data-aos="fade-right">
+        <div data-tilt data-tilt-perspective="2000" class="container">
+          <a onclick="closePage('projects/pixel-pete.html');" class="project-button">
+            <div class="project-container">
+              <h5>2016</h5>
+              <h3>Self-Published</h3>
+              <h1 class="animated-text-fill">Pixel Pete</h1>
+              <h4>An Android game with pixel graphics</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br><br>
+      <div class="project-button" data-aos="fade-up" data-aos-offset="0">
+        <div class="button" onclick="closePage('projects.html')">
+          <span class="button__mask"></span>
+          <span class="button__text">View more</span>
+        </div>
+      </div>
+      <br><br>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Vertical text piece -->
+    <div class="vertical-side-text">&copy;
+      <script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script> - FLIZZET DIGITAL
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <button class="nav-button hamburger hamburger--3dxy" type="button" onclick="openNav();">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+  <!-- Navbar -->
+  <div id="navbar">
+    <div class="navbar-content">
+      <ul>
+        <li><a class="nav-link active">
+          <span class="left-selector">[</span>Home<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('about.html')" class="nav-link">
+          <span class="left-selector">[</span>About<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('projects.html')"class="nav-link">
+          <span class="left-selector">[</span>Projects<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('careers.html')" class="nav-link">
+          <span class="left-selector">[</span>Careers<span class="right-selector">]</span>
+        </a></li>
+        <li><a onclick="closePage('contact.html')" class="nav-link">
+          <span class="left-selector">[</span>Contact<span class="right-selector">]</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="darkness-overlay"></div>
+
+  <!-- Left Sidebar -->
+  <div id="left-sidebar">
+    <div class="left-sidebar-background"></div>
+    <div class="left-sidebar-content"></div>
+    <span class="close-button" onclick="closeLeftSidebar();">&times;</span>
+  </div>
+
+  <script src="assets/js/tilt.jquery.min.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      easing: 'ease-out-quart'
+    });
+  </script>
+</body>
+</html>
